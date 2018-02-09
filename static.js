@@ -1,16 +1,17 @@
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
+import PropTypes from 'prop-types';
 
 export const staticPropTypes = {
   ...TouchableOpacity.propTypes,
-  type: React.PropTypes.string.isRequired,
-  backgroundColor: React.PropTypes.string,
-  borderColor: React.PropTypes.string,
-  borderRadius: React.PropTypes.number,
-  shadowHeight: React.PropTypes.number,
-  borderLeftWidth: React.PropTypes.number,
-  borderRightWidth: React.PropTypes.number,
-  activeOpacity: React.PropTypes.number,
+  type: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
+  borderColor: PropTypes.string,
+  borderRadius: PropTypes.number,
+  shadowHeight: PropTypes.number,
+  borderLeftWidth: PropTypes.number,
+  borderRightWidth: PropTypes.number,
+  activeOpacity: PropTypes.number,
   containerStyle: View.propTypes.style,
   contentStyle: Text.propTypes.style
 }
